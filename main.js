@@ -1,36 +1,19 @@
 /*
-Mail
-Crea una lista di email di invitati ad una festa.
-Chiedi all’utente la sua email,
-controlla che sia nella lista di chi può accedere,
-stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for.
-Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
-Si può fare? Certo che si basta ragionare un po’.
-Nota:
-Non è necessario provvedere alla validazione delle email
+Consegna:
+Scrivi un programma che stampi i numeri da 1 a 100,
+ma per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
+Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+Prima di partire a scrivere codice poniamoci qualche domanda:
+Come faccio a sapere se un numero è divisibile per?
+Abbiamo visto qualcosa di particolare che possiamo usare?
+Consigli del giorno:
+1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
+2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
  */
-const lista = [
-    'Nathan.ciao@.it',
-    'Ed.ciao@.it',
-    'Fabio.ciao@.it',
-    'Phil.ciao@.it',
-    'Carlo.ciao@.it',
-    'Lewis.ciao@.it',
-    'Luca.ciao@.it'
-  ];
-
-  let b = false;
-
-  let mail = prompt("Scrivi la tua mail")
-
-  for (let i = 0; i < lista.length; i++) {
-
-    if (mail==lista[i]) {
-
-        b=true;
-
+  for (let i = 1; i <=100 ; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log(`FizzBuzz`)      
     }
-<<<<<<< HEAD
     else if (i % 3 == 0){
         console.log(`Fizz`)
     }
@@ -41,17 +24,3 @@ const lista = [
         console.log(`${i}`)
     }   
 } 
-=======
-    
-  }
-
-  if (b==true) {
-
-    console.log(`Sei presente nella lista`)
-    
-  } else {
-
-    console.log(`Non sei presente nella lista`)
-    
-  }
->>>>>>> da83b2cf309b39f047f83e6a111d17246e7ce3a9
